@@ -1,7 +1,7 @@
 Now modify the CausalSelfAttention class to use rotary embeddings:
 
 ```      
-pip install rotary-embedding-tensorflow
+pip install rotary-embedding-torch
 ```
       
 ```python
