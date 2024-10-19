@@ -103,7 +103,7 @@ if __name__ == "__main__":
 
     # Step 6: Save the encoded data to binary files inside the data directory
     train_bin_path = os.path.join(base_dir, 'train.bin')
-    valid_bin_path = os.path.join(base_dir, 'valid.bin')
+    valid_bin_path = os.path.join(base_dir, 'val.bin')
     test_bin_path = os.path.join(base_dir, 'test.bin')
 
     save_to_bin(train_ids, train_bin_path)
