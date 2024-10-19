@@ -169,3 +169,9 @@ def forward(self, x):
 
     return y
 ```
+
+
+
+> step 2000: train loss 2.0577, train perplexity 7.8959, val loss 2.0154, val perplexity 7.5307
+> saving checkpoint to out-enwik8-char
+> iter 2000: loss 1.9532, time 4379.76ms, mfu 0.01%
