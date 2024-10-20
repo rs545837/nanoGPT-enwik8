@@ -185,3 +185,8 @@ def forward(self, x):
 > step 5000: train loss 1.1375, train perplexity 3.1209, val loss 1.1526, val perplexity 3.1680
 > saving checkpoint to out-enwik8-char
 > iter 5000: loss 1.2152, time 4920.90ms, mfu 12.61%
+
+
+> step 5000: train loss 1.1395, train perplexity 3.1270, val loss 1.1548, val perplexity 3.1750
+> saving checkpoint to out-enwik8-char
+> iter 5000: loss 1.2174, time 4907.41ms, mfu 12.61%
