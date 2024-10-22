@@ -110,7 +110,6 @@ We already suggested a dynamic learning rate decay mechanism. Here’s the full 
 
 (Layer-wise Learning Rate Decay)
 ```python
-Copy code
 def configure_optimizers(self, weight_decay, learning_rate, betas, device_type):
     decay_params = []
     nodecay_params = []
