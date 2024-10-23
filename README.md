@@ -225,13 +225,13 @@ def forward(self, x):
 
 
 > [!NOTE]
-> learning rate: 1e-3, model_v4
+> learning rate: 1e-3
 > > with model_v4.py
 > step 10000: train loss 1.0556, train perplexity 2.8750, val loss 1.0791, val perplexity 2.9437
 > iter 10000: loss 1.1129, time 5650.78ms, mfu 11.88%
 
 > [!NOTE]
-> learning rate: 2e-3, model_v4
+> learning rate: 2e-3
 > > with model_v4.py
 step 10000: train loss 1.0588, train perplexity 2.8845, val loss 1.0831, val perplexity 2.9556
 iter 10000: loss 1.1160, time 5935.31ms, mfu 12.08%
@@ -239,7 +239,13 @@ iter 10000: loss 1.1160, time 5935.31ms, mfu 12.08%
 
 
 > [!NOTE]
-> learning rate: 2e-3, model_v4
+> learning rate: 2e-3
 > > with model_v4.py
 step 15000: train loss 1.0226, train perplexity 2.7818, val loss 1.0512, val perplexity 2.8625
 iter 15000: loss 1.0434, time 5922.00ms, mfu 11.68%
+
+> [!NOTE]
+> learning rate: 2e-3
+> > > with model_v5.py
+step 15000: train loss 1.0266, train perplexity 2.7930, val loss 1.0499, val perplexity 2.8586
+iter 15000: loss 1.0771, time 8009.14ms, mfu 8.73%
