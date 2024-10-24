@@ -269,3 +269,10 @@ iter 15000: loss 1.0515, time 8519.65ms, mfu 9.28%
 step 25000: train loss 0.9511, train perplexity 2.5901, val loss 0.9875, val perplexity 2.6859
 saving checkpoint to out-enwik8-char
 iter 25000: loss 0.9982, time 9437.11ms, mfu 9.18%
+
+
+> [!NOTE]
+> learning rate: 8e-4
+> > > with model_v6.py, great_config.py
+step 50000: train loss 0.7800, train perplexity 2.1822, val loss 0.8868, val perplexity 2.4284
+iter 50000: loss 0.8363, time 19203.31ms, mfu 18.09%
