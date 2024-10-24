@@ -236,8 +236,6 @@ def forward(self, x):
 step 10000: train loss 1.0588, train perplexity 2.8845, val loss 1.0831, val perplexity 2.9556
 iter 10000: loss 1.1160, time 5935.31ms, mfu 12.08%
 
-
-
 > [!NOTE]
 > learning rate: 2e-3
 > > with model_v4.py
@@ -249,3 +247,9 @@ iter 15000: loss 1.0434, time 5922.00ms, mfu 11.68%
 > > > with model_v5.py
 step 15000: train loss 1.0266, train perplexity 2.7930, val loss 1.0499, val perplexity 2.8586
 iter 15000: loss 1.0771, time 8009.14ms, mfu 8.73%
+
+> [!NOTE]
+> learning rate: 2e-3
+> > > with model_v6.py
+step 15000: train loss 0.9886, train perplexity 2.6886, val loss 1.0234, val perplexity 2.7839
+iter 15000: loss 0.9749, time 8946.45ms, mfu 9.56%
