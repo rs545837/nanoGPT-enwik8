@@ -253,3 +253,10 @@ iter 15000: loss 1.0771, time 8009.14ms, mfu 8.73%
 > > > with model_v6.py
 step 15000: train loss 0.9886, train perplexity 2.6886, val loss 1.0234, val perplexity 2.7839
 iter 15000: loss 0.9749, time 8946.45ms, mfu 9.56%
+
+
+> [!NOTE]
+> learning rate: 2e-3
+> > > with model_v7.py
+step 15000: train loss 1.0571, train perplexity 2.8795, val loss 1.0878, val perplexity 2.9691
+iter 15000: loss 1.0515, time 8519.65ms, mfu 9.28%
