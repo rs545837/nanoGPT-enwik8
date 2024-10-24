@@ -260,3 +260,12 @@ iter 15000: loss 0.9749, time 8946.45ms, mfu 9.56%
 > > > with model_v7.py
 step 15000: train loss 1.0571, train perplexity 2.8795, val loss 1.0878, val perplexity 2.9691
 iter 15000: loss 1.0515, time 8519.65ms, mfu 9.28%
+
+
+
+> [!NOTE]
+> learning rate: 2e-3
+> > > with model_v6.py
+step 25000: train loss 0.9511, train perplexity 2.5901, val loss 0.9875, val perplexity 2.6859
+saving checkpoint to out-enwik8-char
+iter 25000: loss 0.9982, time 9437.11ms, mfu 9.18%
