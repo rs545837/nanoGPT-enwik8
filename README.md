@@ -276,3 +276,10 @@ iter 25000: loss 0.9982, time 9437.11ms, mfu 9.18%
 > > > with model_v6.py, great_config.py
 step 50000: train loss 0.7800, train perplexity 2.1822, val loss 0.8868, val perplexity 2.4284
 iter 50000: loss 0.8363, time 19203.31ms, mfu 18.09%
+
+
+> [!NOTE]
+> learning rate: 1e-3
+> > > with model_v6.py, great_config2.py
+step 27000: train loss 0.6514, train perplexity 1.9185, val loss 0.8296, val perplexity 2.2928
+iter 27000: loss 0.7029, time 132372.65ms, mfu 14.71%
