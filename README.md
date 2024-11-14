@@ -7,7 +7,7 @@ pip install -r requirements.txt
 
 ## Change the train.py and model.py and use the ones in this repository.
 
-## 
+## Also modify the config file for training the enwik8 character model.
 
 
 
