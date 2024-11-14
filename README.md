@@ -1,3 +1,14 @@
+# Quick Start
+
+## Start by downloading all the requirements from requirementst.txt:
+```pip install -r requirements.txt```
+
+## Change the train.py and model.py and use the ones in this repository.
+
+## 
+
+
+
 Now modify the CausalSelfAttention class to use rotary embeddings:
 
 ```      
