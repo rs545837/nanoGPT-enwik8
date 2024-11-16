@@ -10,9 +10,15 @@ pip install -r requirements.txt
 python preprocess.py
 ```
 
-### Change the train.py and model.py and use the ones in this repository.
+### Create a train_enwik8_char.py for the training config and model.py and use the ones in this repository, and start the training using:
+```python
+python train.py config/train_enwik8_char.py
+```
 
-### Also modify the config file for training the enwik8 character model.
+### Evaluate the checkpoint but before that copy and paste the evaluate.py file into the main nanoGPT repo.
+```python
+python evaluate.py --checkpoint out-enwik8-char/ckpt.pt
+```
 
 
 
