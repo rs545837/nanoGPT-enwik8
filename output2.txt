@@ -1,0 +1,127 @@
+IsADirectoryError: [Errno 21] Is a directory: 'out-enwik8-char/'
+root@fd7b8bc8c556:~/nanoGPT# python evaluate.py --checkpoint out-enwik8-char/ckpt.pt
+Loading checkpoint from out-enwik8-char/ckpt.pt
+Using vocab_size=6064 from data/enwik8_char/meta.pkl
+number of parameters: 70.23M
+Loaded model: 16 layers, 16 heads, 512 embedding dim
+Loading validation data from data/enwik8_char/val.bin
+
+Starting evaluation...
+
+Evaluation Results:
+Average Loss (nats): 1.0390
+Bits per character (BPC): 1.4989
+
+Processed 99,840 characters in 390 sequences
+root@fd7b8bc8c556:~/nanoGPT# python evaluate.py --checkpoint out-enwik8-char/ckpt.pt
+Loading checkpoint from out-enwik8-char/ckpt.pt
+Using vocab_size=6064 from data/enwik8_char/meta.pkl
+number of parameters: 70.23M
+Loaded model: 16 layers, 16 heads, 512 embedding dim
+Loading validation data from data/enwik8_char/val.bin
+
+Starting evaluation...
+
+Evaluation Results:
+Average Loss (nats): 0.9913
+Bits per character (BPC): 1.4301
+
+Processed 99,840 characters in 390 sequences
+root@fd7b8bc8c556:~/nanoGPT# python evaluate.py --checkpoint out-enwik8-char/ckpt.pt
+Loading checkpoint from out-enwik8-char/ckpt.pt
+Using vocab_size=6064 from data/enwik8_char/meta.pkl
+number of parameters: 70.23M
+Loaded model: 16 layers, 16 heads, 512 embedding dim
+Loading validation data from data/enwik8_char/val.bin
+
+Starting evaluation...
+
+Evaluation Results:
+Average Loss (nats): 0.9913
+Bits per character (BPC): 1.4301
+
+Processed 99,840 characters in 390 sequences
+root@fd7b8bc8c556:~/nanoGPT# python evaluate.py --checkpoint out-enwik8-char/ckpt.pt
+Loading checkpoint from out-enwik8-char/ckpt.pt
+Using vocab_size=6064 from data/enwik8_char/meta.pkl
+number of parameters: 70.23M
+Loaded model: 16 layers, 16 heads, 512 embedding dim
+Loading validation data from data/enwik8_char/val.bin
+
+Starting evaluation...
+
+Evaluation Results:
+Average Loss (nats): 0.9637
+Bits per character (BPC): 1.3903
+
+Processed 99,840 characters in 390 sequences
+root@fd7b8bc8c556:~/nanoGPT# python evaluate.py --checkpoint out-enwik8-char/ckpt.pt
+Loading checkpoint from out-enwik8-char/ckpt.pt
+Using vocab_size=6064 from data/enwik8_char/meta.pkl
+number of parameters: 70.23M
+Loaded model: 16 layers, 16 heads, 512 embedding dim
+Loading validation data from data/enwik8_char/val.bin
+
+Starting evaluation...
+
+Evaluation Results:
+Average Loss (nats): 0.9390
+Bits per character (BPC): 1.3548
+
+Processed 99,840 characters in 390 sequences
+root@fd7b8bc8c556:~/nanoGPT# python evaluate.py --checkpoint out-enwik8-char/ckpt.pt
+Loading checkpoint from out-enwik8-char/ckpt.pt
+Using vocab_size=6064 from data/enwik8_char/meta.pkl
+number of parameters: 70.23M
+Loaded model: 16 layers, 16 heads, 512 embedding dim
+Loading validation data from data/enwik8_char/val.bin
+
+Starting evaluation...
+
+Evaluation Results:
+Average Loss (nats): 0.9070
+Bits per character (BPC): 1.3085
+
+Processed 99,840 characters in 390 sequences
+root@fd7b8bc8c556:~/nanoGPT# python evaluate.py --checkpoint out-enwik8-char/ckpt.pt
+Loading checkpoint from out-enwik8-char/ckpt.pt
+Using vocab_size=6064 from data/enwik8_char/meta.pkl
+number of parameters: 70.23M
+Loaded model: 16 layers, 16 heads, 512 embedding dim
+Loading validation data from data/enwik8_char/val.bin
+
+Starting evaluation...
+
+Evaluation Results:
+Average Loss (nats): 0.8971
+Bits per character (BPC): 1.2942
+
+Processed 99,840 characters in 390 sequences
+root@fd7b8bc8c556:~/nanoGPT# python evaluate.py --checkpoint out-enwik8-char/ckpt.pt
+Loading checkpoint from out-enwik8-char/ckpt.pt
+Using vocab_size=6064 from data/enwik8_char/meta.pkl
+number of parameters: 70.23M
+Loaded model: 16 layers, 16 heads, 512 embedding dim
+Loading validation data from data/enwik8_char/val.bin
+
+Starting evaluation...
+
+Evaluation Results:
+Average Loss (nats): 0.8900
+Bits per character (BPC): 1.2840
+
+Processed 99,840 characters in 390 sequences
+root@fd7b8bc8c556:~/nanoGPT# python evaluate.py --checkpoint out-enwik8-char/ckpt.pt
+Loading checkpoint from out-enwik8-char/ckpt.pt
+Using vocab_size=6064 from data/enwik8_char/meta.pkl
+number of parameters: 70.23M
+Loaded model: 16 layers, 16 heads, 512 embedding dim
+Loading validation data from data/enwik8_char/val.bin
+
+Starting evaluation...
+
+Evaluation Results:
+Average Loss (nats): 0.8853
+Bits per character (BPC): 1.2772
+
+Processed 99,840 characters in 390 sequences
