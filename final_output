@@ -1,0 +1,266 @@
+step 0: train loss 8.6415, val loss 8.6437
+iter 0: loss 8.6655, time 42219.62ms, mfu -100.00%
+iter 100: loss 2.0440, time 1642.77ms, mfu 8.56%
+iter 200: loss 1.4532, time 1645.12ms, mfu 8.56%
+iter 300: loss 1.3418, time 1669.91ms, mfu 8.55%
+iter 400: loss 1.2690, time 1646.38ms, mfu 8.55%
+step 500: train loss 1.1727, val loss 1.1998
+saving checkpoint to out-enwik8-char
+iter 500: loss 1.2528, time 42461.99ms, mfu 7.73%
+iter 600: loss 1.1754, time 1646.40ms, mfu 7.81%
+iter 700: loss 1.1271, time 1644.21ms, mfu 7.88%
+iter 800: loss 1.1018, time 1648.63ms, mfu 7.95%
+iter 900: loss 1.0696, time 1645.34ms, mfu 8.01%
+step 1000: train loss 1.0297, val loss 1.0660
+saving checkpoint to out-enwik8-char
+iter 1000: loss 1.0544, time 42620.71ms, mfu 7.24%
+iter 1100: loss 1.0162, time 1658.81ms, mfu 7.37%
+iter 1200: loss 1.0298, time 1647.02ms, mfu 7.48%
+iter 1300: loss 0.9764, time 1649.86ms, mfu 7.59%
+iter 1400: loss 1.0113, time 1644.05ms, mfu 7.68%
+step 1500: train loss 0.9713, val loss 1.0136
+saving checkpoint to out-enwik8-char
+iter 1500: loss 0.9340, time 42250.23ms, mfu 6.95%
+iter 1600: loss 1.0264, time 1650.87ms, mfu 7.11%
+iter 1700: loss 0.9987, time 1667.10ms, mfu 7.24%
+iter 1800: loss 0.9942, time 1644.63ms, mfu 7.37%
+iter 1900: loss 0.9647, time 1658.73ms, mfu 7.48%
+step 2000: train loss 0.9259, val loss 0.9790
+saving checkpoint to out-enwik8-char
+iter 2000: loss 0.9488, time 42419.83ms, mfu 6.77%
+iter 2100: loss 0.9410, time 1655.75ms, mfu 6.94%
+iter 2200: loss 0.9463, time 1645.93ms, mfu 7.10%
+iter 2300: loss 0.9589, time 1640.19ms, mfu 7.25%
+iter 2400: loss 0.9923, time 1643.94ms, mfu 7.38%
+step 2500: train loss 0.8905, val loss 0.9542
+saving checkpoint to out-enwik8-char
+iter 2500: loss 0.9402, time 42300.81ms, mfu 6.68%
+iter 2600: loss 0.9206, time 1653.62ms, mfu 6.86%
+iter 2700: loss 0.9227, time 1662.79ms, mfu 7.02%
+iter 2800: loss 0.8938, time 1660.43ms, mfu 7.16%
+iter 2900: loss 0.8972, time 1657.71ms, mfu 7.30%
+step 3000: train loss 0.8631, val loss 0.9450
+saving checkpoint to out-enwik8-char
+iter 3000: loss 0.8093, time 42731.41ms, mfu 6.60%
+iter 3100: loss 0.9163, time 1644.22ms, mfu 6.80%
+iter 3200: loss 0.9168, time 1646.24ms, mfu 6.97%
+iter 3300: loss 0.8616, time 1642.14ms, mfu 7.13%
+iter 3400: loss 0.8932, time 1646.15ms, mfu 7.27%
+step 3500: train loss 0.8367, val loss 0.9286
+saving checkpoint to out-enwik8-char
+iter 3500: loss 0.9108, time 42380.76ms, mfu 6.58%
+iter 3600: loss 0.8180, time 1643.43ms, mfu 6.78%
+iter 3700: loss 0.9096, time 1649.00ms, mfu 6.95%
+iter 3800: loss 0.8528, time 1653.72ms, mfu 7.11%
+iter 3900: loss 0.8450, time 1648.90ms, mfu 7.25%
+step 4000: train loss 0.8202, val loss 0.9147
+saving checkpoint to out-enwik8-char
+iter 4000: loss 0.8916, time 42454.47ms, mfu 6.56%
+iter 4100: loss 0.8494, time 1655.71ms, mfu 6.75%
+iter 4200: loss 0.8440, time 1647.07ms, mfu 6.93%
+iter 4300: loss 0.7995, time 1643.45ms, mfu 7.09%
+iter 4400: loss 0.7923, time 1642.96ms, mfu 7.24%
+step 4500: train loss 0.8047, val loss 0.9071
+saving checkpoint to out-enwik8-char
+iter 4500: loss 0.8681, time 42591.87ms, mfu 6.55%
+iter 4600: loss 0.8552, time 1658.98ms, mfu 6.74%
+iter 4700: loss 0.8296, time 1646.13ms, mfu 6.92%
+iter 4800: loss 0.8107, time 1643.34ms, mfu 7.09%
+iter 4900: loss 0.8310, time 1642.91ms, mfu 7.24%
+step 5000: train loss 0.7992, val loss 0.9046
+saving checkpoint to out-enwik8-char
+iter 5000: loss 0.8259, time 42563.76ms, mfu 6.54%
+wandb: 🚀 View run mini-gpt at: https://wandb.ai/music123/enwik8-char/runs/vcfryzqt
+wandb: Find logs at: wandb/run-20241125_010740-vcfryzqt/logs
+root@faf23ce5d574:~/nanoGPT# python evaluate.py --checkpoint out-enwik8-char/ckpt.pt
+ 
+Loading checkpoint from out-enwik8-char/ckpt.pt
+Using vocab_size=6064 from data/enwik8_char/meta.pkl
+number of parameters: 70.23M
+Loaded model: 16 layers, 16 heads, 512 embedding dim
+Loading validation data from data/enwik8_char/val.bin
+
+Starting evaluation...
+
+Evaluation Results:
+Average Loss (nats): 0.8845
+Bits per character (BPC): 1.2760
+
+Processed 99,840 characters in 390 sequences
+
+
+
+
+root@faf23ce5d574:~/nanoGPT# python train.py config/train_enwik8_char.py
+Overriding config with config/train_enwik8_char.py:
+# train a miniature character-level shakespeare model
+# good for debugging and playing on macbooks and such
+
+out_dir = 'out-enwik8-char'
+eval_interval = 500 # keep frequent because we'll overfit
+eval_iters = 200
+log_interval = 100 # don't print too too often
+
+# we expect to overfit on this small dataset, so only save when val improves
+always_save_checkpoint = True
+
+wandb_log = True # override via command line if you like
+wandb_project = 'enwik8-char'
+wandb_run_name = 'mini-gpt'
+
+dataset = 'enwik8_char'
+gradient_accumulation_steps = 6
+batch_size = 64
+block_size = 256 # context of up to 256 previous characters
+
+# baby GPT model :)
+n_layer = 16
+n_head = 16
+n_embd = 512
+dropout = 0.1
+
+learning_rate = 1e-3 # with baby networks can afford to go a bit higher
+max_iters = 7000
+lr_decay_iters = 7000 # make equal to max_iters usually
+min_lr = 1e-4 # learning_rate / 10 usually
+beta2 = 0.99 # make a bit bigger because number of tokens per iter is small
+
+warmup_iters = 100 # not super necessary potentially
+
+# on macbook also add
+# device = 'cpu'  # run on cpu only
+device = 'cuda'  # Use CUDA for training
+dtype = 'float16'  # Use float16 for faster training
+compile = False # do not torch compile the model
+tokens per iteration will be: 98,304
+found vocab_size = 6064 (inside data/enwik8_char/meta.pkl)
+Initializing a new model from scratch
+number of parameters: 70.23M
+num decayed parameter tensors: 81, with 70,213,632 parameters
+num non-decayed parameter tensors: 33, with 16,896 parameters
+using fused AdamW: True
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: rs545837 (music123). Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.18.7
+wandb: Run data is saved locally in /root/nanoGPT/wandb/run-20241125_035733-i426ot9v
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run mini-gpt
+wandb: ⭐️ View project at https://wandb.ai/music123/enwik8-char
+wandb: 🚀 View run at https://wandb.ai/music123/enwik8-char/runs/i426ot9v
+step 0: train loss 8.6415, val loss 8.6437
+iter 0: loss 8.6655, time 42356.87ms, mfu -100.00%
+iter 100: loss 2.0714, time 1645.72ms, mfu 8.55%
+iter 200: loss 1.4501, time 1663.88ms, mfu 8.54%
+iter 300: loss 1.3407, time 1645.60ms, mfu 8.54%
+iter 400: loss 1.2733, time 1650.96ms, mfu 8.54%
+step 500: train loss 1.1728, val loss 1.2006
+saving checkpoint to out-enwik8-char
+iter 500: loss 1.2527, time 42353.39ms, mfu 7.72%
+iter 600: loss 1.1829, time 1666.38ms, mfu 7.79%
+iter 700: loss 1.1323, time 1649.94ms, mfu 7.86%
+iter 800: loss 1.0992, time 1662.47ms, mfu 7.92%
+iter 900: loss 1.0736, time 1649.50ms, mfu 7.98%
+step 1000: train loss 1.0312, val loss 1.0662
+saving checkpoint to out-enwik8-char
+iter 1000: loss 1.0552, time 42410.33ms, mfu 7.22%
+iter 1100: loss 1.0157, time 1648.99ms, mfu 7.35%
+iter 1200: loss 1.0327, time 1649.41ms, mfu 7.47%
+iter 1300: loss 0.9721, time 1643.53ms, mfu 7.58%
+iter 1400: loss 1.0099, time 1660.24ms, mfu 7.67%
+step 1500: train loss 0.9748, val loss 1.0160
+saving checkpoint to out-enwik8-char
+iter 1500: loss 0.9406, time 42501.76ms, mfu 6.93%
+iter 1600: loss 1.0323, time 1644.08ms, mfu 7.10%
+iter 1700: loss 1.0071, time 1651.79ms, mfu 7.24%
+iter 1800: loss 1.0022, time 1653.57ms, mfu 7.37%
+iter 1900: loss 0.9632, time 1662.73ms, mfu 7.48%
+step 2000: train loss 0.9328, val loss 0.9844
+saving checkpoint to out-enwik8-char
+iter 2000: loss 0.9524, time 42415.29ms, mfu 6.76%
+iter 2100: loss 0.9442, time 1653.71ms, mfu 6.94%
+iter 2200: loss 0.9645, time 1662.25ms, mfu 7.09%
+iter 2300: loss 0.9692, time 1648.78ms, mfu 7.23%
+iter 2400: loss 1.0053, time 1645.34ms, mfu 7.36%
+step 2500: train loss 0.9007, val loss 0.9603
+saving checkpoint to out-enwik8-char
+iter 2500: loss 0.9543, time 42433.62ms, mfu 6.66%
+iter 2600: loss 0.9393, time 1650.53ms, mfu 6.85%
+iter 2700: loss 0.9339, time 1643.94ms, mfu 7.02%
+iter 2800: loss 0.9039, time 1670.71ms, mfu 7.16%
+iter 2900: loss 0.9095, time 1643.99ms, mfu 7.30%
+step 3000: train loss 0.8762, val loss 0.9517
+saving checkpoint to out-enwik8-char
+iter 3000: loss 0.8239, time 42464.05ms, mfu 6.60%
+iter 3100: loss 0.9258, time 1652.37ms, mfu 6.79%
+iter 3200: loss 0.9287, time 1651.31ms, mfu 6.97%
+iter 3300: loss 0.8805, time 1671.08ms, mfu 7.11%
+iter 3400: loss 0.9108, time 1658.15ms, mfu 7.25%
+step 3500: train loss 0.8509, val loss 0.9364
+saving checkpoint to out-enwik8-char
+iter 3500: loss 0.9202, time 42400.80ms, mfu 6.56%
+iter 3600: loss 0.8298, time 1657.83ms, mfu 6.75%
+iter 3700: loss 0.9259, time 1664.47ms, mfu 6.92%
+iter 3800: loss 0.8616, time 1652.05ms, mfu 7.08%
+iter 3900: loss 0.8632, time 1659.77ms, mfu 7.22%
+step 4000: train loss 0.8340, val loss 0.9220
+saving checkpoint to out-enwik8-char
+iter 4000: loss 0.9062, time 42450.51ms, mfu 6.53%
+iter 4100: loss 0.8621, time 1649.56ms, mfu 6.73%
+iter 4200: loss 0.8551, time 1649.06ms, mfu 6.91%
+iter 4300: loss 0.8201, time 1651.41ms, mfu 7.07%
+iter 4400: loss 0.7992, time 1652.29ms, mfu 7.22%
+step 4500: train loss 0.8136, val loss 0.9139
+saving checkpoint to out-enwik8-char
+iter 4500: loss 0.8709, time 42473.51ms, mfu 6.53%
+iter 4600: loss 0.8668, time 1662.31ms, mfu 6.72%
+iter 4700: loss 0.8323, time 1646.02ms, mfu 6.90%
+iter 4800: loss 0.8061, time 1644.95ms, mfu 7.07%
+iter 4900: loss 0.8295, time 1652.70ms, mfu 7.21%
+step 5000: train loss 0.8010, val loss 0.9061
+saving checkpoint to out-enwik8-char
+iter 5000: loss 0.8290, time 42394.73ms, mfu 6.53%
+iter 5100: loss 0.8518, time 1645.39ms, mfu 6.73%
+iter 5200: loss 0.8720, time 1660.14ms, mfu 6.90%
+iter 5300: loss 0.7820, time 1658.04ms, mfu 7.06%
+iter 5400: loss 0.7795, time 1653.43ms, mfu 7.21%
+step 5500: train loss 0.7857, val loss 0.9038
+saving checkpoint to out-enwik8-char
+iter 5500: loss 0.8426, time 42504.75ms, mfu 6.52%
+iter 5600: loss 0.7796, time 1650.80ms, mfu 6.72%
+iter 5700: loss 0.8232, time 1662.76ms, mfu 6.89%
+iter 5800: loss 0.8201, time 1641.77ms, mfu 7.06%
+iter 5900: loss 0.8432, time 1649.88ms, mfu 7.21%
+step 6000: train loss 0.7710, val loss 0.8981
+saving checkpoint to out-enwik8-char
+iter 6000: loss 0.7740, time 42329.39ms, mfu 6.52%
+iter 6100: loss 0.7917, time 1652.96ms, mfu 6.72%
+iter 6200: loss 0.8451, time 1670.63ms, mfu 6.89%
+iter 6300: loss 0.7538, time 1674.22ms, mfu 7.04%
+iter 6400: loss 0.8062, time 1665.22ms, mfu 7.18%
+step 6500: train loss 0.7604, val loss 0.8934
+saving checkpoint to out-enwik8-char
+iter 6500: loss 0.7912, time 42381.19ms, mfu 6.50%
+iter 6600: loss 0.7421, time 1641.67ms, mfu 6.70%
+iter 6700: loss 0.8147, time 1647.47ms, mfu 6.89%
+iter 6800: loss 0.7565, time 1657.60ms, mfu 7.05%
+iter 6900: loss 0.8156, time 1644.73ms, mfu 7.20%
+step 7000: train loss 0.7565, val loss 0.8911
+saving checkpoint to out-enwik8-char
+iter 7000: loss 0.7821, time 42491.72ms, mfu 6.51%
+wandb: 🚀 View run mini-gpt at: https://wandb.ai/music123/enwik8-char/runs/i426ot9v
+wandb: Find logs at: wandb/run-20241125_035733-i426ot9v/logs
+root@faf23ce5d574:~/nanoGPT# python evaluate.py --checkpoint out-enwik8-char/ckpt.pt
+Loading checkpoint from out-enwik8-char/ckpt.pt
+Using vocab_size=6064 from data/enwik8_char/meta.pkl
+number of parameters: 70.23M
+Loaded model: 16 layers, 16 heads, 512 embedding dim
+Loading validation data from data/enwik8_char/val.bin
+
+Starting evaluation...
+
+Evaluation Results:
+Average Loss (nats): 0.8723
+Bits per character (BPC): 1.2585
+
+Processed 99,840 characters in 390 sequences
+
