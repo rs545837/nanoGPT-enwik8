@@ -313,3 +313,10 @@ iter 27000: loss 0.7029, time 132372.65ms, mfu 14.71%
 > > > with model_v6.py, great_config2.py
 step 50000: train loss 0.5118, train perplexity 1.6685, val loss 0.8679, val perplexity 2.3825
 iter 50000: loss 0.5606, time 128502.63ms, mfu 14.70%
+
+
+
+| Repo | Steps  | Perplexity |
+| ---- | ------ | ---------- |
+| kchou0907/nanoGPT | 5000 |       |
+|                   |      |       |
