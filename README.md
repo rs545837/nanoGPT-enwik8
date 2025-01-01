@@ -316,7 +316,7 @@ iter 50000: loss 0.5606, time 128502.63ms, mfu 14.70%
 
 
 
-| Repo | Steps  | Perplexity(val) |
+| Repo | Steps  | Perplexity(val) | Perplexity(test) |
 | ---- | ------ | ---------- |
-| kchou0907/nanoGPT | 5000 |  1.3391     |
-|                   | 5000 |             |
+| kchou0907/nanoGPT | 5000 |  1.3391     |1.3013 |
+|                   | 5000 |             |       |
