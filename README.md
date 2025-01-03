@@ -316,12 +316,12 @@ iter 50000: loss 0.5606, time 128502.63ms, mfu 14.70%
 
 
 
-| Repo | Steps  | Perplexity(val) | Perplexity(test) | Technique Used | Avg Loss |
-| ---- | ------ | ---------- | ----------------------| -- | ---
-| kchou0907/nanoGPT | 5000 |  1.3391     |1.3013 |(Compressing technique) | |
-| kchou0907/nanoGPT | 14000 |  1.2512  | 1.2199| | |
-| mycode |5000 |1.6560 |1.6626 |  | |
-|mycode|40000|1.24(broke benchmark)|1.24||| 
+| Repo | Steps  | Perplexity(val) | Perplexity(test) | Technique Used | Avg Loss | Notes
+| ---- | ------ | ---------- | ----------------------| -- | --- | ---
+| kchou0907/nanoGPT | 5000 |  1.3391     |1.3013 |(Compressing technique) | | |
+| kchou0907/nanoGPT | 14000 |  1.2512  | 1.2199| | | |
+| mycode |5000 |1.6560 |1.6626 |  | | |
+|mycode|40000|1.24(broke benchmark)|1.24|||within 40000 steps, now need to calculated exact and without RMSNorm |
 
 > [!NOTE]
 > mycode => also reached 1.22 for very short time
