@@ -20,6 +20,9 @@ from Muon.muon import Muon
 import torch._dynamo
 torch._dynamo.config.suppress_errors = True
 
+def lambda_init_fn(layers):
+    return 0.8 - 0.6 * math.exp(-0.3 * layers)
+
 def precompute_rope_cache(
     dim: int,
     seq_len: int,
@@ -113,18 +116,28 @@ class LayerNorm(nn.Module):
         return F.layer_norm(input, self.weight.shape, self.weight, self.bias, 1e-5)
 
 class RMSNorm(nn.Module):
-    def __init__(self, ndim, bias=True, eps=1e-5):
+    def __init__(self, dim: int, eps: float = 1e-6, elementwise_affine=True, memory_efficient=False):
         super().__init__()
-        self.scale = nn.Parameter(torch.ones(ndim))
-        self.bias = nn.Parameter(torch.zeros(ndim)) if bias else None
+        self.dim = dim
         self.eps = eps
+        self.elementwise_affine = elementwise_affine
+        if self.elementwise_affine:
+            self.weight = nn.Parameter(torch.ones(dim))
+        else:
+            self.register_parameter('weight', None)
+
+    def _norm(self, x):
+        return x * torch.rsqrt(x.pow(2).mean(-1, keepdim=True) + self.eps)
 
     def forward(self, x):
-        norm = x.pow(2).mean(-1, keepdim=True).sqrt()
-        if self.bias is not None:
-            return self.scale * x / (norm + self.eps) + self.bias
-        else:
-            return self.scale * x / (norm + self.eps)
+        output = self._norm(x.float()).type_as(x)
+        if self.weight is not None:
+            output = output * self.weight
+        return output
+
+    def extra_repr(self) -> str:
+        return f'dim={self.dim}, eps={self.eps}, elementwise_affine={self.elementwise_affine}'
+
 
 class Compressor(nn.Module): #helps redundancy
     """
@@ -322,7 +335,7 @@ class DifferentialSelfAttention(nn.Module):
         y = y.transpose(1, 2).contiguous().view(B, T, C)
         y = self.c_proj(y)
         y = self.resid_dropout(y)
-        y = self.compress(y)
+        y = self.compressor(y)
         return y
 
 
