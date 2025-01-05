@@ -69,6 +69,29 @@ def apply_rope(x: torch.Tensor, rope_cache: torch.Tensor) -> torch.Tensor:
     # Numerically stable recombination
     return torch.stack((x_rot, x_pass), dim=-1).flatten(-2)
 
+def get_attention_mechanism(config):
+    """
+    Factory function to return the appropriate attention mechanism based on config.
+    
+    Args:
+        config (GPTConfig): Configuration object containing attention settings
+        
+    Returns:
+        nn.Module: The selected attention module
+    """
+    # Add attention_type to GPTConfig with default value
+    if not hasattr(config, 'attention_type'):
+        config.attention_type = 'casual'  # Default to casual attention
+        
+    attention_type = config.attention_type.lower()
+    
+    if attention_type == 'causal':
+        return CausalSelfAttention(config)
+    elif attention_type == 'differential':
+        return DifferentialSelfAttention(config)
+    else:
+        raise ValueError(f"Unsupported attention type: {attention_type}")
+
 def get_norm(config):
     norm_type = config.norm_type.lower()
     if norm_type == 'layernorm':
@@ -356,7 +379,7 @@ class Block(nn.Module):
         self.use_scaled_residual = config.use_scaled_residual
         
         self.ln_1 = LayerNorm(config.n_embd, bias=config.bias)
-        self.attn = CausalSelfAttention(config)
+        self.attn = get_attention_mechanism(config)
         self.ln_2 = LayerNorm(config.n_embd, bias=config.bias)
         self.mlp = MLP(config)
         
@@ -402,6 +425,9 @@ class GPTConfig:
     n_layer: int = 12
     n_head: int = 12
     n_embd: int = 768
+
+    # Attention configuration
+    attention_type: str = 'causal'  # Options: 'causal' or 'differential'
     
     # Regularization
     dropout: float = 0.0  # Generally better to use 0.0 and rely on other regularization
@@ -417,13 +443,14 @@ class GPTConfig:
     rope_scaling: Optional[float] = None  # For dynamic NTK scaling
     
     # Performance options
-    use_flash_attention: bool = True
     use_checkpointing: bool = False   # Enable gradient checkpointing for memory efficiency
     
     # Advanced features
     head_size: Optional[int] = None  # If None, will be set to n_embd // n_head
     optimizer: str = 'adamw'  # 'adamw' or 'muon'
     noise: float = 0.0  # gradient noise scale
+
+    
     
     def __post_init__(self):
         # Compute derived values
