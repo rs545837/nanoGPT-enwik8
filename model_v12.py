@@ -126,7 +126,7 @@ class RMSNorm(nn.Module):
         else:
             return self.scale * x / (norm + self.eps)
 
-class CoolCompressor(nn.Module): #helps redundancy
+class Compressor(nn.Module): #helps redundancy
     """
     Compresses the output of the attention mechanism into a lower-dimensional representation. Prob helps redundancy.
     """
@@ -179,7 +179,7 @@ class CausalSelfAttention(nn.Module):
         self.attention_scale = 1.0 / math.sqrt(self.head_size)
         
         #compressor for attention output to reduce dimensionality
-        self.compressor = CoolCompressor(config.n_embd, compression_dim=config.n_embd // 2)
+        self.compressor = Compressor(config.n_embd, compression_dim=config.n_embd // 2)
 
     def forward(self, x):
         B, T, C = x.size()
@@ -281,7 +281,7 @@ class DifferentialSelfAttention(nn.Module):
         self.subln = RMSNorm(config.n_embd, eps=1e-5, elementwise_affine=False)
         self.resid_dropout = nn.Dropout(config.dropout)
         self.dropout = config.dropout
-        self.compressor = CoolCompressor(config.n_embd, compression_dim=config.n_embd // 2)
+        self.compressor = Compressor(config.n_embd, compression_dim=config.n_embd // 2)
       
 
     def forward(self, x):
