@@ -427,7 +427,10 @@ class GPTConfig:
     n_embd: int = 768
 
     # Attention configuration
-    attention_type: str = 'causal'  # Options: 'causal' or 'differential'
+    attention_type: str = 'differential'  # Options: 'causal' or 'differential'
+
+    # Normalization Type
+    norm_type: str = 'rmsnorm'
     
     # Regularization
     dropout: float = 0.0  # Generally better to use 0.0 and rely on other regularization
